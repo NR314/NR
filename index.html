@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美容室テンプレート</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #ffcccc;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff9999;
+            padding: 1rem;
+        }
+        nav a {
+            margin: 0 1rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+        .hero {
+            text-align: center;
+            background-image: url('image/30952336_s.jpg'); /* 画像を差し替えてください */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 2rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+            padding: 1rem;
+            text-align: center;
+            flex: 1 1 calc(33% - 2rem);
+            max-width: calc(33% - 2rem);
+        }
+        .service img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #ffcccc;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>美容室[サロン名]</h1>
+        <p>最高のスタイルをあなたに</p>
+    </header>
+
+    <nav>
+        <a href="#about">サロンについて</a>
+        <a href="#services">サービス</a>
+        <a href="#contact">お問い合わせ</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>ようこそ 西原美容室 へ</h1>
+            <p>ここであなたの魅力を引き出します</p>
+        </section>
+
+        <section id="about">
+            <h2>サロンについて</h2>
+            <p>私たちは、お客様一人一人に合ったスタイルを提供することを目指しています。最高の快適な空間でお待ちしています。</p>
+        </section>
+
+        <section id="services">
+            <h2>サービス</h2>
+            <div class="services">
+                <div class="service">
+                    <img src="image/31190063_s.jpg" alt="カット">
+                    <h3>カット</h3>
+                    <p>あなたに似合うスタイルを提案します。</p>
+                </div>
+                <div class="service">
+                    <img src="image/3938812_s.jpg" alt="カラー">
+                    <h3>カラー</h3>
+                    <p>トレンドの色味でイメージチェンジ。</p>
+                </div>
+                <div class="service">
+                    <img src="image/R.jpg" alt="パーマ">
+                    <h3>パーマ</h3>
+                    <p>理想のスタイルに仕上げます。</p>
+                </div>
+            </div>
+        </section>
+
+            <section id="contact">
+                <h2>お問い合わせ</h2>
+                <p>この番号で予約: <strong>47-1209</strong></p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 美容室[サロン名]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
